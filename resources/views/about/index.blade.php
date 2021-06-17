@@ -7,5 +7,6 @@
 @section('title', 'За Нас | Почетна')
 
 @section('content')
-
+    @include('layout.navbar')
+    @include('layout.footer')
 @endsection

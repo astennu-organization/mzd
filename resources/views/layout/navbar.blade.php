@@ -22,19 +22,19 @@
     </div>
     <ul class="custom-menu m-auto" id="menu">
       <li class="custom-menu-item">
-        <a href="#" class="custom-menu-link custom-active">Почетна</a>
+        <a href="{{ route('home.index') }}" class="custom-menu-link custom-active">Почетна</a>
       </li>
       <li class="custom-menu-item">
-        <a href="#" class="custom-menu-link">За нас</a>
+        <a href="{{ route('about.index') }}" class="custom-menu-link">За нас</a>
       </li>
       <li class="custom-menu-item">
-        <a href="#" class="custom-menu-link">Новости</a>
+        <a href="{{ route('news.index') }}" class="custom-menu-link">Новости</a>
       </li>
       <li class="custom-menu-item">
-        <a href="#" class="custom-menu-link">Галерија</a>
+        <a href="{{ route('gallery.index') }}" class="custom-menu-link">Галерија</a>
       </li>
       <li class="custom-menu-item">
-        <a href="#" class="custom-menu-link">Пријави случај</a>
+        <a href="{{ route('report.index') }}" class="custom-menu-link">Пријави случај</a>
       </li>
     </ul>
     <div class="custom-social">
