@@ -8,7 +8,13 @@ class ModeratorController extends Controller
 {
     public function index()
     {
-        return view('home.index');
+        return view('moderator.index');
+    }
+
+
+    public function login()
+    {
+        return view('moderator.login');
     }
 
 

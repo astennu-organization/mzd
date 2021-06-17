@@ -30,3 +30,4 @@ Route::get('/report',           [ReportController::class, 'index'])->name('repor
 
 // Moderator
 Route::get('/moderator',        [ModeratorController::class, 'index'])->name('moderator.index');
+Route::get('/moderator/login',  [ModeratorController::class, 'login'])->name('moderator.login');
