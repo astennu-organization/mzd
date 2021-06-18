@@ -10,7 +10,7 @@
     @include('layout.navbar')
     <div class="container content">
         <div class="row">
-            <h2 class="mb-5">Контактирај не</h2>
+            <h2 class="mb-3">Контактирај не</h2>
             <div class="col-md-12">
                 <form action="" method="">
                     @csrf
@@ -39,5 +39,5 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div>w
 @endsection

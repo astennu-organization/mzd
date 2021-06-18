@@ -13,10 +13,12 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/form.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/team.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
-
+    
     @yield('custom-css')
 
     <title>@yield('title')</title>
