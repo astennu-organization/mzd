@@ -23,8 +23,14 @@
                 class="custom-menu-link {{ request()->is('/') ? 'custom-active' : '' }}">Почетна</a>
         </li>
         <li class="custom-menu-item">
-            <a href="{{ route('about.index') }}"
-                class="custom-menu-link {{ request()->is('about*') ? 'custom-active' : '' }}">За нас</a>
+            <a
+                class="custom-menu-link dropdown-toggle {{ request()->is('about*') ? 'custom-active' : '' }}"  role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">За нас</a>
+                
+                  <ul class="dropdown-menu mt-3 me-auto text-center" style='font-size: 14px !important' aria-labelledby="dropdownMenuLink">
+                    <li><a href="{{ route('about.index') }}" class="dropdown-item border-bottom" href="#">Информации</a></li>
+                    <li><a href="{{ route('about.team') }}" class="dropdown-item border-bottom" href="#">Нашиот тим</a></li>
+                    <li><a href="{{ route('about.contact') }}" class="dropdown-item" href="#">Контакт</a></li>
+                  </ul>
         </li>
         <li class="custom-menu-item">
             <a href="{{ route('news.index') }}"
@@ -32,7 +38,12 @@
         </li>
         <li class="custom-menu-item">
             <a href="{{ route('gallery.index') }}"
-                class="custom-menu-link {{ request()->is('gallery*') ? 'custom-active' : '' }}">Галерија</a>
+                class="custom-menu-link dropdown-toggle {{ request()->is('gallery*') ? 'custom-active' : '' }}"  role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Галерија</a>
+
+                <ul class="dropdown-menu mt-3 me-auto text-center" style='font-size: 14px !important;' aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item border-bottom" href="#">Слики</a></li>
+                    <li><a class="dropdown-item" href="#">Видеа</a></li>
+                </ul>
         </li>
         <li class="custom-menu-item">
             <a href="{{ route('report.index') }}"
