@@ -57,7 +57,7 @@ h3 {
 
 .team img {
     height: 230px !important;
-    border: 1px solid #ffd2d2;
+    border: 1px solid #8b00fd;
 
     -webkit-box-reflect: below 2px
         linear-gradient(transparent, transparent, #0004);

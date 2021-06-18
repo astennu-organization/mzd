@@ -36,7 +36,7 @@ button {
     font-size: 1.75rem;
     font-weight: 700;
     line-height: inherit;
-    color: #148cb8;
+    color: #7c14b8;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
 }
@@ -52,7 +52,7 @@ button {
 }
 
 .custom-active {
-    color: #ff6d6d !important;
+    color: #a92ed9 !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -158,7 +158,7 @@ button {
 }
 
 .custom-navbar .custom-menu-link:hover {
-    color: #ffa0a0;
+    color: #a92ed9;
 }
 
 .custom-navbar .custom-menu.active {
@@ -214,7 +214,7 @@ button {
 }
 
 .custom-navbar .custom-social-item:hover {
-    color: #ffa0a0;
+    color: #a92ed9;
 }
 
 @media only screen and (min-width: 768px) {

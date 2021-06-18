@@ -38,12 +38,8 @@
         </li>
         <li class="custom-menu-item">
             <a href="{{ route('gallery.index') }}"
-                class="custom-menu-link dropdown-toggle {{ request()->is('gallery*') ? 'custom-active' : '' }}"  role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Галерија</a>
-
-                <ul class="dropdown-menu mt-3 me-auto text-center" style='font-size: 14px !important;' aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item border-bottom" href="#">Слики</a></li>
-                    <li><a class="dropdown-item" href="#">Видеа</a></li>
-                </ul>
+                class="custom-menu-link {{ request()->is('gallery*') ? 'custom-active' : '' }}">Галерија
+            </a>
         </li>
         <li class="custom-menu-item">
             <a href="{{ route('report.index') }}"
