@@ -31,3 +31,5 @@ Route::get('/report',           [ReportController::class, 'index'])->name('repor
 // Moderator
 Route::get('/moderator',        [ModeratorController::class, 'index'])->name('moderator.index');
 Route::get('/moderator/login',  [ModeratorController::class, 'login'])->name('moderator.login');
+Route::get('/moderator/logout',  [ModeratorController::class, 'logout'])->name('moderator.logout');
+Route::post('/moderator/login',  [ModeratorController::class, 'store'])->name('moderator.login');

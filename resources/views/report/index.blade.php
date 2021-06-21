@@ -7,5 +7,6 @@
 @section('title', 'Пријави Случај')
 
 @section('content')
-
+    @include('layout.navbar')
+    <div class="content"></div>
 @endsection

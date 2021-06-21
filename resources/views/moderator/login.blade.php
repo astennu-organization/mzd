@@ -21,7 +21,7 @@
         }
 
         a {
-            color: #ef107f;
+            color: #8b00fd;
             text-decoration: unset;
         }
 
@@ -83,7 +83,7 @@
         }
 
         .box-background--blue {
-            background-color: #ef107f;
+            background-color: #8b00fd;
         }
 
         .box-background--white {
@@ -91,7 +91,7 @@
         }
 
         .box-background--blue800 {
-            background-color: #ef107f;
+            background-color: #8b00fd;
         }
 
         .box-background--gray100 {
@@ -99,7 +99,7 @@
         }
 
         .box-background--cyan200 {
-            background-color: #f88cc2;
+            background-color: #c176ff;
         }
 
         .padding-top--64 {
@@ -190,11 +190,11 @@
         }
 
         input[type="submit"] {
-            background-color: rgb(239, 16, 127);
+            background-color: rgb(139, 0, 253);
             box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
                 rgba(0, 0, 0, 0) 0px 0px 0px 0px,
                 rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
-                rgb(239, 16, 127) 0px 0px 0px 1px,
+                rgb(139, 0, 253) 0px 0px 0px 1px,
                 rgba(0, 0, 0, 0) 0px 0px 0px 0px,
                 rgba(0, 0, 0, 0) 0px 0px 0px 0px,
                 rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
@@ -251,7 +251,7 @@
         }
 
         a:hover {
-            color: #d60f72 !important;
+            color: #7900db !important;
         }
 
         @keyframes animationLeftRight {
@@ -335,7 +335,21 @@
                 <div class="formbg-outer">
                     <div class="formbg">
                         <div class="formbg-inner padding-horizontal--48">
-                            <form id="stripe-login">
+                            @if ($errors->any())
+                                <br>
+                                @foreach ($errors->all() as $error)
+                                    <p class="alert {{ Session::get('alert-class', 'alert-danger') }}">
+                                        {{ $error }}</p>
+                                @endforeach
+                                <br>
+                            @endif
+
+                            @if (Session::has('error'))
+                                <p class="alert {{ Session::get('alert-class', 'alert-danger') }}">
+                                    {{ Session::get('error') }}</p>
+                            @endif
+                            <form action="{{ route('moderator.login') }}" method="POST" id="stripe-login">
+                                @csrf
                                 <div class="field padding-bottom--24">
                                     <label for="email">Е-маил</label>
                                     <input type="email" name="email">

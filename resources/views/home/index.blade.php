@@ -99,9 +99,9 @@
                     If you are a mental health professional who wants to share your
                     expertise…
                 </p>
-                <button class="btn btn-outline-light text-uppercase rounded-pill">
+                <a href="{{ route('about.contact') }}" class="btn btn-outline-light text-uppercase rounded-pill">
                     contact us
-                </button>
+                </a>
             </div>
         </div>
         <div class="row">
