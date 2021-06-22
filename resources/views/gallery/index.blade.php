@@ -263,9 +263,9 @@
 
 @section('content')
     @include('layout.navbar')
-    <div id="container">
+    <div id="container" class="mb-5">
         <div class="item">
-            <a href="{{ route('gallery.photos') }}">
+            <a href="{{ route('photo.gallery.index') }}">
 
                 <div class="content">
                     <h2>Слики</h2>
@@ -273,28 +273,31 @@
 
                 <div class="previews">
                     <div class="preview-image">
-                        <img src="https://i.ytimg.com/vi/c7oV1T2j5mc/maxresdefault.jpg">
-                    </div>
-                    <div class="preview-image">
-                        <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg">
+                        <img
+                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
                     </div>
                     <div class="preview-image">
                         <img
-                            src="http://thirtyoneseventyfive.com/wp-content/uploads/2018/07/archaicawful-landscape-photo-ideas-design-garden-creative-landscapes-contest-viewbug.jpg">
+                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
                     </div>
                     <div class="preview-image">
                         <img
-                            src="https://cdn.fstoppers.com/styles/large/s3/lead/2018/07/take_better_shots_with_your_drone_landscape_photos.jpg">
+                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
                     </div>
                     <div class="preview-image">
-                        <img src="https://d31fr2pwly4c4s.cloudfront.net/8/6/c/1080632_0_landscape-photography_400.jpg">
+                        <img
+                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                    </div>
+                    <div class="preview-image">
+                        <img
+                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
                     </div>
                 </div>
             </a>
         </div>
 
         <div class="item">
-            <a href="{{ route('gallery.videos') }}">
+            <a href="{{ route('video.gallery.index') }}">
                 <div class="content">
                     <h2>Видеа</h2>
                 </div>

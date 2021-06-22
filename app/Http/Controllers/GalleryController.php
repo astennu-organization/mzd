@@ -12,18 +12,6 @@ class GalleryController extends Controller
     }
 
 
-    public function photos()
-    {
-        return view('gallery.photos');
-    }
-
-
-    public function videos()
-    {
-        return view('gallery.videos');
-    }
-
-
     public function create()
     {
         //
