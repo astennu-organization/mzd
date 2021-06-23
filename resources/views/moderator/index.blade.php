@@ -33,7 +33,7 @@
                 <h3 class="text-center">Прикачи фотографија</h3>
                 <form action="{{ route('photo.gallery.upload') }}" class="form-image-upload" method="POST"
                     enctype="multipart/form-data">
-                    {!! csrf_field() !!}
+                    @csrf
 
                     <div class="row">
                         <div class="col-md-6 mx-auto">
@@ -50,7 +50,7 @@
                             <div class="form-group text-center">
                                 <br />
                                 <button type="submit" class="btn purple-btn">Прикачи</button>
-                                <a href="{{ route('photo.gallery.index')}}" class="btn purple-btn">Фотографии</a>
+                                <a href="{{ route('photo.gallery.index') }}" class="btn purple-btn">Фотографии</a>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@
                 <h3 class="text-center">Прикачи видео</h3>
                 <form action="{{ route('video.gallery.upload') }}" class="form-image-upload" method="POST"
                     enctype="multipart/form-data">
-                    {!! csrf_field() !!}
+                    @csrf
 
                     <div class="row">
                         <div class="col-md-6 mx-auto">
@@ -90,7 +90,7 @@
             <div class="col-md-6 my-5">
                 <h3 class="text-center">Креирај новост</h3>
                 <form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data">
-                    {!! csrf_field() !!}
+                    @csrf
 
                     <div class="row">
                         <div class="col-md-6 mx-auto">
