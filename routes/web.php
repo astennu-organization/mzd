@@ -37,6 +37,7 @@ Route::delete('/gallery/videos/{id}',       [VideoGalleryController::class, 'des
 
 // Report
 Route::get('/report',                       [ReportController::class, 'index'])->name('report.index');
+Route::post('/report',                       [ReportController::class, 'store'])->name('report.store');
 
 // Moderator
 Route::get('/moderator',                    [ModeratorController::class, 'index'])->name('moderator.index');

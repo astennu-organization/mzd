@@ -40,7 +40,7 @@ class AboutController extends Controller
         $input->telephone = $request->get('telephone');
         $input->message = $request->get('message');
         if ($input->save()) {
-            return back()->with('success', 'Податоците се успешно пратени! Ке добиете одговор на долу дадената емаил адреса.');
+            return back()->with('success', 'Податоците се успешно пратени! Ке добиете одговор на подолу дадената емаил адреса.');
         } else {
             return back()->with('error', 'Настана грешка!');
         }
