@@ -17,7 +17,11 @@ class CreatePhotoGalleryTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('photo');
+            $table->bigInteger('moderator_id')->unsigned();
             $table->timestamps();
+
+
+            $table->foreign('moderator_id')->references('id')->on('moderators')->onDelete('cascade');
         });
     }
 

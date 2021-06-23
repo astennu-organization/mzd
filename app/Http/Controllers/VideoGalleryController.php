@@ -24,14 +24,15 @@ class VideoGalleryController extends Controller
             ]);
 
 
-            $input['video'] = time() . '.' . $request->video->getClientOriginalExtension();
+            $video = time() . '.' . $request->video->getClientOriginalExtension();
 
-            $request->video->move(public_path('videos'), $input['video']);
+            $request->video->move(public_path('videos'), $video);
 
-
-            $input['title'] = $request->title;
-
-            VideoGallery::create($input);
+            $input = new VideoGallery();
+            $input->title = $request->title;
+            $input->video = $video;
+            $input->moderator_id = session()->get('moderator_id');
+            $input->save();
 
             return back()
                 ->with('success', 'Video Uploaded successfully.');

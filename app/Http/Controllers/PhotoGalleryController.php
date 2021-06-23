@@ -24,14 +24,15 @@ class PhotoGalleryController extends Controller
             ]);
 
 
-            $input['photo'] = time() . '.' . $request->photo->getClientOriginalExtension();
+            $photo = time() . '.' . $request->photo->getClientOriginalExtension();
 
-            $request->photo->move(public_path('photos'), $input['photo']);
+            $request->photo->move(public_path('photos'), $photo);
 
-
-            $input['title'] = $request->title;
-
-            PhotoGallery::create($input);
+            $input = new PhotoGallery();
+            $input->title = $request->title;
+            $input->photo = $photo;
+            $input->moderator_id = session()->get('moderator_id');
+            $input->save();
 
             return back()
                 ->with('success', 'Photo Uploaded successfully.');

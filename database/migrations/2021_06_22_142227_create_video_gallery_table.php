@@ -17,7 +17,11 @@ class CreateVideoGalleryTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('video');
+            $table->bigInteger('moderator_id')->unsigned();
             $table->timestamps();
+
+
+            $table->foreign('moderator_id')->references('id')->on('moderators')->onDelete('cascade');
         });
     }
 
