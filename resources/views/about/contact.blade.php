@@ -31,7 +31,7 @@
                     </div>
                     <div class="styled-input wide">
                         <textarea name="message" value="{{ old('message') }}" required></textarea>
-                        <label>Вашата порака</label>
+                        <label>Порака</label>
                         <span></span>
                     </div>
 
