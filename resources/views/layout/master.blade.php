@@ -15,8 +15,6 @@
     />
     
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/form.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/team.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
     
     @yield('custom-css')

@@ -10,7 +10,8 @@
 
     <div class="container mt-5">
         <div class="text-center float-right">
-            <a href="{{ route('moderator.logout') }}" class="btn btn-dark">Logout</a>
+            <a href="{{ route('moderator.logout') }}" class="btn btn-dark">Одјави се</a>
+            <a href="{{ route('home.index') }}" class="btn btn-dark">Почетна</a>
         </div>
         <div class="row mt-5">
             @if (count($errors) > 0)
@@ -29,7 +30,7 @@
             @endif
             {{-- Photo Upload --}}
             <div class="col-md-6 my-2">
-                <h3 class="text-center">Photo Gallery Upload</h3>
+                <h3 class="text-center">Прикачи фотографија</h3>
                 <form action="{{ route('photo.gallery.upload') }}" class="form-image-upload" method="POST"
                     enctype="multipart/form-data">
                     {!! csrf_field() !!}
@@ -37,18 +38,19 @@
                     <div class="row">
                         <div class="col-md-6 mx-auto">
                             <div class="form-group">
-                                <strong>Title:</strong>
+                                <strong>Наслов:</strong>
                                 <input type="text" name="title" class="form-control" placeholder="Title">
                             </div>
 
                             <div class="form-group">
-                                <strong>Photo:</strong>
+                                <strong>Фотографија:</strong>
                                 <input type="file" name="photo" class="form-control">
                             </div>
 
                             <div class="form-group text-center">
                                 <br />
-                                <button type="submit" class="btn btn-primary">Upload</button>
+                                <button type="submit" class="btn purple-btn">Прикачи</button>
+                                <a href="{{ route('photo.gallery.index')}}" class="btn purple-btn">Фотографии</a>
                             </div>
                         </div>
                     </div>
@@ -57,7 +59,7 @@
 
             {{-- Video Upload --}}
             <div class="col-md-6 my-2">
-                <h3 class="text-center">Video Gallery Upload</h3>
+                <h3 class="text-center">Прикачи видео</h3>
                 <form action="{{ route('video.gallery.upload') }}" class="form-image-upload" method="POST"
                     enctype="multipart/form-data">
                     {!! csrf_field() !!}
@@ -65,18 +67,19 @@
                     <div class="row">
                         <div class="col-md-6 mx-auto">
                             <div class="form-group">
-                                <strong>Title:</strong>
+                                <strong>Наслов:</strong>
                                 <input type="text" name="title" class="form-control" placeholder="Title">
                             </div>
 
                             <div class="form-group">
-                                <strong>Video:</strong>
+                                <strong>Видео:</strong>
                                 <input type="file" name="video" class="form-control">
                             </div>
 
                             <div class="form-group text-center">
                                 <br />
-                                <button type="submit" class="btn btn-primary">Upload</button>
+                                <button type="submit" class="btn purple-btn">Прикачи</button>
+                                <a href='{{ route('video.gallery.index') }}' class="btn purple-btn">Видеа</a>
                             </div>
                         </div>
                     </div>
@@ -85,30 +88,31 @@
 
             {{-- News Create --}}
             <div class="col-md-6 my-5">
-                <h3 class="text-center">News Creator</h3>
+                <h3 class="text-center">Креирај новост</h3>
                 <form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data">
                     {!! csrf_field() !!}
 
                     <div class="row">
                         <div class="col-md-6 mx-auto">
                             <div class="form-group">
-                                <strong>Title:</strong>
+                                <strong>Наслов:</strong>
                                 <input type="text" name="title" class="form-control" placeholder="Title">
                             </div>
 
                             <div class="form-group">
-                                <strong>Image:</strong>
+                                <strong>Фотографија:</strong>
                                 <input type="file" name="image" class="form-control">
                             </div>
 
                             <div class="form-group">
-                                <strong>Content:</strong>
-                                <input type="text" name="content" class="form-control" placeholder="Content">
+                                <strong>Содржина:</strong>
+                                <textarea class="form-control" name="content" style="height: 100px"></textarea>
                             </div>
 
                             <div class="form-group text-center">
                                 <br />
-                                <button type="submit" class="btn btn-primary">Create</button>
+                                <button type="submit" class="btn purple-btn">Креирај</button>
+                                <a href="{{ route('news.index') }}" class="btn purple-btn">Новости</a>
                             </div>
                         </div>
                     </div>

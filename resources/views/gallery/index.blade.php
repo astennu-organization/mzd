@@ -253,9 +253,6 @@
                 transform: rotate(0) scale(1.2);
             }
         }
-
-        /*# sourceMappingURL=style.css.map */
-
     </style>
 @endsection
 
@@ -268,7 +265,7 @@
             <a href="{{ route('photo.gallery.index') }}">
 
                 <div class="content">
-                    <h2>Слики</h2>
+                    <h2>Фотографии</h2>
                 </div>
 
                 <div class="previews">
@@ -304,22 +301,22 @@
 
                 <div class="previews">
                     <div class="preview-image">
-                        <img src="https://cdn.mos.cms.futurecdn.net/raYa9qNMVG8wDY4L3qp9c8.jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
                     </div>
                     <div class="preview-image">
                         <img
-                            src="https://www.popphoto.com/sites/popphoto.com/files/styles/1000_1x_/public/images/2018/07/00-otherworldly-national-park.jpg?itok=1bxhktRC&fc=50,50">
+                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
                     </div>
                     <div class="preview-image">
-                        <img src="https://www.adorama.com/alc/wp-content/uploads/2016/07/americanwest-mezz-1024x576.jpg">
-                    </div>
-                    <div class="preview-image">
-                        <img
-                            src="https://www.nationalgeographic.com/content/dam/photography/photos/000/675/67547.ngsversion.1467941445762.adapt.1900.1.jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
                     </div>
                     <div class="preview-image">
                         <img
-                            src="https://i2.wp.com/fotogr8.com/wp-content/uploads/2016/08/jeffrey-swanson-landscape-photographer.jpg?resize=600%2C397&ssl=1">
+                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                    </div>
+                    <div class="preview-image">
+                        <img
+                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
                     </div>
                 </div>
             </a>
