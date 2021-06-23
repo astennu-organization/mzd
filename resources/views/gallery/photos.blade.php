@@ -30,7 +30,7 @@
         @if ($photos->count())
             <div class="container">
                 <div class="row">
-                        @foreach ($photos as $photo)
+                    @foreach ($photos as $photo)
                         <div class="col-md-4 mb-5">
                             <div class="card text-white">
                                 <img src="{{ asset('/photos/' . $photo->photo) }}" class="card-img hover" alt="...">
@@ -40,7 +40,7 @@
                                 </div>
                             </div>
                         </div>
-                        @endforeach
+                    @endforeach
                 </div>
             </div>
         @endif

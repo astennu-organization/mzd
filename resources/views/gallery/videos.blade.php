@@ -1,8 +1,6 @@
 @extends('layout.master')
 
 @section('custom-css')
-<style>
-</style>
 @endsection
 
 @section('title', 'Галерија | Видеа')
