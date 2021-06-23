@@ -22,6 +22,7 @@ Route::post('/about/contact',               [AboutController::class, 'store'])->
 
 // News
 Route::get('/news',                         [NewsController::class, 'index'])->name('news.index');
+Route::post('/news',                         [NewsController::class, 'store'])->name('news.store');
 
 // Gallery
 Route::get('/gallery',                      [GalleryController::class, 'index'])->name('gallery.index');

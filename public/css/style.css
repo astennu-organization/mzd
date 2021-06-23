@@ -20,6 +20,13 @@ body {
     background-position: center;
 }
 
+.custom-primary-text {
+    color: #a92ed9;
+}
+.custom-primary-bg {
+    background-color: #a92ed9;
+}
+
 h1 {
     font-weight: bold;
 }
