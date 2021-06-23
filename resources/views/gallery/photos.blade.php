@@ -22,7 +22,7 @@
     </style>
 @endsection
 
-@section('title', 'Галерија | Слики')
+@section('title', 'Галерија | Фотографии')
 
 @section('content')
     @include('layout.navbar')

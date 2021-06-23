@@ -85,43 +85,51 @@ textarea {
         <div class="row">
             <h2 class="mb-3">Контактирај не</h2>
             <div class="col-md-12">
-                @if ($errors->any())
-                    <div class="alert alert-danger">
-                        @foreach ($errors->all() as $error)
-                            <p>{{ $error }}</p>
-                        @endforeach
-                    </div>
-                @endif
-                @if (Session::has('error'))
-                    <p class="alert {{ Session::get('alert-class', 'alert-danger') }}">
-                        {{ Session::get('error') }}</p>
-                @endif
-                @if (Session::has('success'))
+                    @if (Session::has('success'))
                     <p class="alert {{ Session::get('alert-class', 'alert-success') }}">
                         {{ Session::get('success') }}</p>
-                @endif
-                <form action="{{ route('about.contact.store') }}" method="POST">
-                    @csrf
-                    <div class="styled-input">
-                        <input type="text" name="name" value="{{ old('name') }}"/>
+                        @endif
+                        <form action="{{ route('about.contact.store') }}" method="POST">
+                        @csrf
+                        <div class="styled-input">
+                        <input type="text" name="name" class="@error('name') is-invalid @enderror" value="{{ old('name') }}"/>
                         <label>Име</label>
                         <span></span>
+                            @error('name')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     </div>
-                    <div class="styled-input">
-
-                        <input type="email" name="email" value="{{ old('email') }}"/>
+                        <div class="styled-input">
+                        <input type="input" name="email" class="@error('email') is-invalid @enderror" value="{{ old('email') }}"/>
                         <label>Е-пошта</label>
                         <span></span>
+                            @error('email')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     </div>
                     <div class="styled-input">
-                        <input type="tel" name="telephone" value="{{ old('telephone') }}"/>
+                        <input type="tel" name="telephone" class="@error('telephone') is-invalid @enderror" value="{{ old('telephone') }}"/>
                         <label>Телефон</label>
                         <span></span>
+                            @error('telephone')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     </div>
                     <div class="styled-input wide">
-                        <textarea name="message" value="{{ old('message') }}"></textarea>
+                        <textarea name="message" class="@error('message') is-invalid @enderror" value="{{ old('message') }}"></textarea>
                         <label>Вашата порака</label>
                         <span></span>
+                            @error('message')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     </div>
 
                     <button type="submit" class="btn btn-outline-dark text-uppercase rounded-pill">Испрати</button>

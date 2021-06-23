@@ -39,7 +39,7 @@
                         <div class="col-md-6 mx-auto">
                             <div class="form-group">
                                 <strong>Наслов:</strong>
-                                <input type="text" name="title" class="form-control" placeholder="Title">
+                                <input type="text" name="title" class="form-control">
                             </div>
 
                             <div class="form-group">
@@ -68,7 +68,7 @@
                         <div class="col-md-6 mx-auto">
                             <div class="form-group">
                                 <strong>Наслов:</strong>
-                                <input type="text" name="title" class="form-control" placeholder="Title">
+                                <input type="text" name="title" class="form-control">
                             </div>
 
                             <div class="form-group">
@@ -96,7 +96,7 @@
                         <div class="col-md-6 mx-auto">
                             <div class="form-group">
                                 <strong>Наслов:</strong>
-                                <input type="text" name="title" class="form-control" placeholder="Title">
+                                <input type="text" name="title" class="form-control">
                             </div>
 
                             <div class="form-group">

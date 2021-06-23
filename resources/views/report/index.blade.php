@@ -88,24 +88,44 @@ textarea {
                 <form action="" method="">
                     @csrf
                     <div class="styled-input">
-                        <input type="text" name="name" value="{{ old('name') }}" required />
+                        <input type="text" name="name"   class="@error('name') is-invalid @enderror" value="{{ old('name') }}" />
                         <label>Име / Анонимно</label>
                         <span></span>
+                            @error('name')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     </div>
                     <div class="styled-input">
-                        <input type="text" name="email" value="{{ old('email') }}" required />
+                        <input type="text" name="email"  class="@error('email') is-invalid @enderror" value="{{ old('email') }}" />
                         <label>Е-пошта</label>
                         <span></span>
+                            @error('email')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     </div>
                     <div class="styled-input">
-                        <input type="tel" name="telephone" value="{{ old('telephone') }}" required />
+                        <input type="tel" name="telephone"  class="@error('telephone') is-invalid @enderror" value="{{ old('telephone') }}" />
                         <label>Телефон</label>
                         <span></span>
+                            @error('telephone')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     </div>
                     <div class="styled-input wide">
-                        <textarea name="message" value="{{ old('message') }}" required></textarea>
+                        <textarea name="message"  class="@error('message') is-invalid @enderror" value="{{ old('message') }}"></textarea>
                         <label>Порака</label>
                         <span></span>
+                            @error('message')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     </div>
 
                     <button type="submit" class="btn btn-outline-dark text-uppercase rounded-pill">Пријави</button>
