@@ -18,6 +18,7 @@ Route::get('/',                             [HomeController::class, 'index'])->n
 Route::get('/about',                        [AboutController::class, 'index'])->name('about.index');
 Route::get('/about/team',                   [AboutController::class, 'team'])->name('about.team');
 Route::get('/about/contact',                [AboutController::class, 'contact'])->name('about.contact');
+Route::post('/about/contact',               [AboutController::class, 'store'])->name('about.contact.store');
 
 // News
 Route::get('/news',                         [NewsController::class, 'index'])->name('news.index');

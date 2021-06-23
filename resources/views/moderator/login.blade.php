@@ -336,12 +336,11 @@
                     <div class="formbg">
                         <div class="formbg-inner padding-horizontal--48">
                             @if ($errors->any())
-                                <br>
-                                @foreach ($errors->all() as $error)
-                                    <p class="alert {{ Session::get('alert-class', 'alert-danger') }}">
-                                        {{ $error }}</p>
-                                @endforeach
-                                <br>
+                                <div class="alert alert-danger">
+                                    @foreach ($errors->all() as $error)
+                                        <p>{{ $error }}</p>
+                                    @endforeach
+                                </div>
                             @endif
 
                             @if (Session::has('error'))
