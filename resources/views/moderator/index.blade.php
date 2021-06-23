@@ -28,7 +28,7 @@
                 </div>
             @endif
             {{-- Photo Upload --}}
-            <div class="col-md-6">
+            <div class="col-md-6 my-2">
                 <h3 class="text-center">Photo Gallery Upload</h3>
                 <form action="{{ route('photo.gallery.upload') }}" class="form-image-upload" method="POST"
                     enctype="multipart/form-data">
@@ -56,7 +56,7 @@
             </div>
 
             {{-- Video Upload --}}
-            <div class="col-md-6">
+            <div class="col-md-6 my-2">
                 <h3 class="text-center">Video Gallery Upload</h3>
                 <form action="{{ route('video.gallery.upload') }}" class="form-image-upload" method="POST"
                     enctype="multipart/form-data">
@@ -77,6 +77,38 @@
                             <div class="form-group text-center">
                                 <br />
                                 <button type="submit" class="btn btn-primary">Upload</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            {{-- News Create --}}
+            <div class="col-md-6 my-5">
+                <h3 class="text-center">News Creator</h3>
+                <form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data">
+                    {!! csrf_field() !!}
+
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <div class="form-group">
+                                <strong>Title:</strong>
+                                <input type="text" name="title" class="form-control" placeholder="Title">
+                            </div>
+
+                            <div class="form-group">
+                                <strong>Image:</strong>
+                                <input type="file" name="image" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <strong>Content:</strong>
+                                <input type="text" name="content" class="form-control" placeholder="Content">
+                            </div>
+
+                            <div class="form-group text-center">
+                                <br />
+                                <button type="submit" class="btn btn-primary">Create</button>
                             </div>
                         </div>
                     </div>
