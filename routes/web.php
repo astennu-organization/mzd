@@ -22,7 +22,8 @@ Route::post('/about/contact',               [AboutController::class, 'store'])->
 
 // News
 Route::get('/news',                         [NewsController::class, 'index'])->name('news.index');
-Route::post('/news',                         [NewsController::class, 'store'])->name('news.store');
+Route::get('/news/{id}',                    [NewsController::class, 'show'])->name('news.show');
+Route::post('/news',                        [NewsController::class, 'store'])->name('news.store');
 
 // Gallery
 Route::get('/gallery',                      [GalleryController::class, 'index'])->name('gallery.index');
@@ -37,7 +38,7 @@ Route::delete('/gallery/videos/{id}',       [VideoGalleryController::class, 'des
 
 // Report
 Route::get('/report',                       [ReportController::class, 'index'])->name('report.index');
-Route::post('/report',                       [ReportController::class, 'store'])->name('report.store');
+Route::post('/report',                      [ReportController::class, 'store'])->name('report.store');
 
 // Moderator
 Route::get('/moderator',                    [ModeratorController::class, 'index'])->name('moderator.index');

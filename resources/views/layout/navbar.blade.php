@@ -23,14 +23,17 @@
                 class="custom-menu-link {{ request()->is('/') ? 'custom-active' : '' }}">Почетна</a>
         </li>
         <li class="custom-menu-item">
-            <a
-                class="custom-menu-link dropdown-toggle {{ request()->is('about*') ? 'custom-active' : '' }}"  role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">За нас</a>
-                
-                  <ul class="dropdown-menu mt-3 me-auto text-center" style='font-size: 14px !important' aria-labelledby="dropdownMenuLink">
-                    <li><a href="{{ route('about.index') }}" class="dropdown-item border-bottom" href="#">Информации</a></li>
-                    <li><a href="{{ route('about.team') }}" class="dropdown-item border-bottom" href="#">Нашиот тим</a></li>
-                    <li><a href="{{ route('about.contact') }}" class="dropdown-item" href="#">Контакт</a></li>
-                  </ul>
+            <a class="custom-menu-link dropdown-toggle {{ request()->is('about*') ? 'custom-active' : '' }}"
+                role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">За нас</a>
+
+            <ul class="dropdown-menu mt-3 me-auto text-center" style='font-size: 14px !important'
+                aria-labelledby="dropdownMenuLink">
+                <li><a href="{{ route('about.index') }}" class="dropdown-item border-bottom">Информации</a>
+                </li>
+                <li><a href="{{ route('about.team') }}" class="dropdown-item border-bottom">Нашиот тим</a>
+                </li>
+                <li><a href="{{ route('about.contact') }}" class="dropdown-item">Контакт</a></li>
+            </ul>
         </li>
         <li class="custom-menu-item">
             <a href="{{ route('news.index') }}"

@@ -50,7 +50,14 @@ class NewsController extends Controller
 
     public function show($id)
     {
-        //
+        $post = News::where('id', $id)
+            ->first();
+
+        if ($post) {
+            return view('news.details', compact('post'));
+        } else {
+            return redirect()->route('news.index');
+        }
     }
 
 

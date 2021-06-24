@@ -6,8 +6,7 @@
             height: 100vh;
             background: -webkit-gradient(linear,
                     left bottom,
-                    left top,
-                );
+                    left top);
             background: linear-gradient(to top, #c587e2 0%, #7456AC 100%);
         }
 
@@ -253,6 +252,7 @@
                 transform: rotate(0) scale(1.2);
             }
         }
+
     </style>
 @endsection
 
@@ -270,24 +270,24 @@
 
                 <div class="previews">
                     <div class="preview-image">
-                        <img
-                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg"
+                            alt="Image Preview">
                     </div>
                     <div class="preview-image">
-                        <img
-                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg"
+                            alt="Image Preview">
                     </div>
                     <div class="preview-image">
-                        <img
-                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg"
+                            alt="Image Preview">
                     </div>
                     <div class="preview-image">
-                        <img
-                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg"
+                            alt="Image Preview">
                     </div>
                     <div class="preview-image">
-                        <img
-                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg"
+                            alt="Image Preview">
                     </div>
                 </div>
             </a>
@@ -301,22 +301,24 @@
 
                 <div class="previews">
                     <div class="preview-image">
-                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg"
+                            alt="Video Preview">
                     </div>
                     <div class="preview-image">
-                        <img
-                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg"
+                            alt="Video Preview">
                     </div>
                     <div class="preview-image">
-                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg"
+                            alt="Video Preview">
                     </div>
                     <div class="preview-image">
-                        <img
-                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg"
+                            alt="Video Preview">
                     </div>
                     <div class="preview-image">
-                        <img
-                            src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg">
+                        <img src="https://img.freepik.com/free-vector/stop-racism-with-hands-heart_23-2148591142.jpg?size=338&ext=jpg"
+                            alt="Video Preview">
                     </div>
                 </div>
             </a>

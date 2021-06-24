@@ -126,8 +126,7 @@
                         @enderror
                     </div>
                     <div class="styled-input wide">
-                        <textarea name="message" class="@error('message') is-invalid @enderror"
-                            value="{{ old('message') }}"></textarea>
+                        <textarea name="message" class="@error('message') is-invalid @enderror"></textarea>
                         <label>Порака</label>
                         <span></span>
                         @error('message')

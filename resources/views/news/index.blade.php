@@ -14,10 +14,6 @@
             color: unset;
         }
 
-        .date {
-            font-family: "Rubik", sans-serif;
-        }
-
         .go-corner {
             display: flex;
             align-items: center;
@@ -96,7 +92,7 @@
                 @if ($news->count())
                     @foreach ($news as $post)
                         <div class="col-md-4 mb-3">
-                            <a href="#">
+                            <a href="{{ route('news.show', $post->id) }}">
                                 <div class="card card4">
                                     <div class="card-body">
                                         <h5 class=" card-title">{{ $post->title }}</h5>
@@ -124,7 +120,7 @@
                                         </small>
                                         <br>
                                         <div class="dimmer"></div>
-                                        <div class="go-corner" href="#">
+                                        <div class="go-corner">
                                             <div class="go-arrow">
                                                 →
                                             </div>

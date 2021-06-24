@@ -40,7 +40,7 @@
                                 <div class="card-img-overlay">
                                     <h5 class="card-title">{{ $photo->title }}</h5>
                                     <hr>
-                                    <p class="card-text">
+                                    <p class="card-text date">
                                         Датум: {{ $photo->created_at->format('jS F Y h:i:s A') }}
                                         <br>
                                         Извор: {{ $photo->moderator->name }}
