@@ -60,7 +60,7 @@ class NewsController extends Controller
         if ($post) {
             return view('news.details', compact('post'));
         } else {
-            redirect()->route('news.index');
+            return redirect()->route('news.index');
         }
     }
 
