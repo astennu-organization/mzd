@@ -104,7 +104,7 @@
                         @enderror
                     </div>
                     <div class="styled-input">
-                        <input type="input" name="email" class="@error('email') is-invalid @enderror"
+                        <input type="text" name="email" class="@error('email') is-invalid @enderror"
                             value="{{ old('email') }}" />
                         <label>Е-пошта</label>
                         <span></span>
@@ -126,8 +126,7 @@
                         @enderror
                     </div>
                     <div class="styled-input wide">
-                        <textarea name="message" class="@error('message') is-invalid @enderror"
-                            value="{{ old('message') }}"></textarea>
+                        <textarea name="message" class="@error('message') is-invalid @enderror"></textarea>
                         <label>Вашата порака</label>
                         <span></span>
                         @error('message')

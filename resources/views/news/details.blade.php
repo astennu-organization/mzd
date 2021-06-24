@@ -1,12 +1,13 @@
 @extends('layout.master')
 
 @section('custom-css')
-<style>
-    h3 {
-        font-weight: 500;
-        font-size: 24px;
-    }
-</style>
+    <style>
+        h3 {
+            font-weight: 500;
+            font-size: 24px;
+        }
+
+    </style>
 @endsection
 
 @section('title', $post->title)
@@ -16,9 +17,9 @@
     <div class="content">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-1">
+                <div class="col-md-10 mx-auto">
 
-                    <h1>{{ $post->title }}</p>
+                    <h1>{{ $post->title }}</h1>
                     <img src="{{ asset('/photos/' . $post->image) }}" alt="{{ $post->title }}">
                     <h3>{{ $post->content }}</h3>
                     <hr>

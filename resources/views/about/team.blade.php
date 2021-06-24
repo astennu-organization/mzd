@@ -8,7 +8,7 @@
 
 @section('content')
     @include('layout.navbar')
-    <div class="container content team" style="margin-top: 100px;">
+    <div class="container content team">
         <div class="row">
             <div class="col-xl-3 col-sm-6 mb-5">
                 <div class="bg-white rounded shadow-sm py-5 px-4">

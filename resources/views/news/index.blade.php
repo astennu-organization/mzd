@@ -118,7 +118,7 @@
                                         </small>
                                         <br>
                                         <div class="dimmer"></div>
-                                        <div class="go-corner" href="#">
+                                        <div class="go-corner">
                                             <div class="go-arrow">
                                                 →
                                             </div>

@@ -351,7 +351,7 @@
                                 @csrf
                                 <div class="field padding-bottom--24">
                                     <label for="email">Е-маил</label>
-                                    <input type="email" name="email">
+                                    <input type="email" name="email" id="email">
                                 </div>
                                 <div class="field padding-bottom--24">
                                     <div class="grid--50-50">
@@ -360,7 +360,7 @@
                                             <a href="#">Заборавивте лозинка?</a>
                                         </div>
                                     </div>
-                                    <input type="password" name="password">
+                                    <input type="password" name="password" id="password">
                                 </div>
                                 <div class="field padding-bottom--24">
                                     <input type="submit" name="submit" value="Логирај се">
