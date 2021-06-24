@@ -18,6 +18,7 @@ class CreateNewsTable extends Migration
             $table->string('title');
             $table->string('image');
             $table->string('content');
+            $table->string('source');
             $table->bigInteger('moderator_id')->unsigned();
             $table->timestamps();
 

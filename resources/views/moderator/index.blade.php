@@ -109,6 +109,11 @@
                                 <textarea class="form-control" name="content" style="height: 100px"></textarea>
                             </div>
 
+                            <div class="form-group">
+                                <strong>Извор:</strong>
+                                <input type="text" name="source" class="form-control">
+                            </div>
+
                             <div class="form-group text-center">
                                 <br />
                                 <button type="submit" class="btn purple-btn">Креирај</button>

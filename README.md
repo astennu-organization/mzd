@@ -46,7 +46,7 @@
 ### Features
 
 -   Clean & Organized Code.
--   Fully Responsive Design.
+-   Fully Responsive Design
 -   Moderator Panel Login System.
 -   Moderator Panel With CRUD Operations for everyting on the website.
 -   Fully Working Contact and Report Forms, Storing In Database.

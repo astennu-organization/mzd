@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\NewsRequest;
 use App\Models\News;
 use Illuminate\Http\Request;
 
@@ -22,15 +23,9 @@ class NewsController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(NewsRequest $request)
     {
         if (session()->has('moderator_id')) {
-            $this->validate($request, [
-                'title' => 'required',
-                'content' => 'required',
-                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            ]);
-
 
             $image = time() . '.' . $request->image->getClientOriginalExtension();
 
@@ -41,6 +36,7 @@ class NewsController extends Controller
             $input->title = $request->title;
             $input->image = $image;
             $input->content = $request->content;
+            $input->source = $request->source;
             $input->moderator_id = session()->get('moderator_id');
             $input->save();
 

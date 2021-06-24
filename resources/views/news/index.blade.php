@@ -118,7 +118,9 @@
                                         <small class="card-text text-muted date">
                                             Датум: {{ $post->created_at->format('jS F Y h:i:s A') }}
                                             <br>
-                                            Извор: {{ $post->moderator->name }}
+                                            Извор: {{ $post->source }}
+                                            <br>
+                                            Модератор: {{ $post->moderator->name }}
                                         </small>
                                         <br>
                                         <div class="dimmer"></div>
