@@ -18,7 +18,7 @@
                                 <source src="{{ asset('/videos/' . $video->video) }}" type="video/mp4">
                             </video>
                             <p class="text-muted">{{ $video->title }}</p>
-                            <small class="text-muted">
+                            <small class="text-muted date">
                                 Датум: {{ $video->created_at->format('jS F Y h:i:s A') }}
                                 <br>
                                 Извор: {{ $video->moderator->name }}
