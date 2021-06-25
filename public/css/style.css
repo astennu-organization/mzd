@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+.date {
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #252a32;
+}
+
+.bannerSection {
+    background-image: url(../images/pride.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.custom-primary-text {
+    color: #a92ed9;
+}
+.custom-primary-bg {
+    background-color: #a92ed9;
+}
+.purple-btn {
+    background-color: #6610f2;
+    color: white;
+}
+
+.purple-btn:hover {
+    color: #c5b3e6;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+/* Team */
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
+
+.team img {
+    height: 230px !important;
+    border: 1px solid #8b00fd;
+
+    -webkit-box-reflect: below 2px
+        linear-gradient(transparent, transparent, #0004);
+
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.5s;
+}
+
+.team img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+    cursor: pointer;
+}
